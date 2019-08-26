@@ -48,4 +48,15 @@ Informatica Cloud features Used:
     - sqlalchemy : SQLAlchemy is the Python SQL toolkit for Redshift and Object Relational Mapper that gives application developers the full power and flexibility of SQL.
     - boto3 : boto3 used to list the s3 objects and download the file
     - os : Used to create a folder which is used to store the received files
+    
+  - Tools/Softwares used
+   - Ananconda with python 3.7
+   - Informatica Cloud
+   - Salesforce Cloud
+   - Python 3.7
+   - Pandas
+   - Git
+   - Amazon S3
+   - Amazon Redshift
+   
  
