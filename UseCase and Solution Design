@@ -8,7 +8,7 @@ Expected outcome of this exercise
 4. Python script code to consume data from S3 to Redshift that runs once a day for multiple file ingestion
 5. Parameterize workflow as well as script where required.
 
-Sankara Solution 
+High Level Solution Design 
 --------------------------------------------------------------------------------------------------------------
 Highlevel Compents ans Pseudo Algorithm ( Files and Screenshots attached for most of the cases)
 Component Used: 
