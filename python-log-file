@@ -1,0 +1,258 @@
+DEBUG: 2019-08-26 02:04:14,615: Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+DEBUG: 2019-08-26 02:04:14,621: Changing event name from before-call.apigateway to before-call.api-gateway
+DEBUG: 2019-08-26 02:04:14,622: Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+DEBUG: 2019-08-26 02:04:14,625: Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+DEBUG: 2019-08-26 02:04:14,626: Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+DEBUG: 2019-08-26 02:04:14,627: Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+DEBUG: 2019-08-26 02:04:14,629: Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+DEBUG: 2019-08-26 02:04:14,634: Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+DEBUG: 2019-08-26 02:04:14,635: Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+DEBUG: 2019-08-26 02:04:14,636: Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+DEBUG: 2019-08-26 02:04:14,637: Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+DEBUG: 2019-08-26 02:04:14,665: Loading JSON file: /Users/Neel/Applications/anaconda3/lib/python3.7/site-packages/boto3/data/s3/2006-03-01/resources-1.json
+DEBUG: 2019-08-26 02:04:14,667: Loading JSON file: /Users/Neel/Applications/anaconda3/lib/python3.7/site-packages/botocore/data/endpoints.json
+DEBUG: 2019-08-26 02:04:14,670: Event choose-service-name: calling handler <function handle_service_name_alias at 0x1042c8a60>
+DEBUG: 2019-08-26 02:04:14,685: Loading JSON file: /Users/Neel/Applications/anaconda3/lib/python3.7/site-packages/botocore/data/s3/2006-03-01/service-2.json
+DEBUG: 2019-08-26 02:04:14,692: Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x10428f400>
+DEBUG: 2019-08-26 02:04:14,692: Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x11d2d3400>
+DEBUG: 2019-08-26 02:04:14,693: Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x10428f1e0>
+DEBUG: 2019-08-26 02:04:14,694: The s3 config key is not a dictionary type, ignoring its value of: None
+DEBUG: 2019-08-26 02:04:14,699: Setting s3 timeout as (60, 60)
+DEBUG: 2019-08-26 02:04:14,701: Loading JSON file: /Users/Neel/Applications/anaconda3/lib/python3.7/site-packages/botocore/data/_retry.json
+DEBUG: 2019-08-26 02:04:14,703: Registering retry handlers for service: s3
+DEBUG: 2019-08-26 02:04:14,705: Defaulting to S3 virtual host style addressing with path style addressing fallback.
+DEBUG: 2019-08-26 02:04:14,706: Loading s3:s3
+DEBUG: 2019-08-26 02:04:14,710: Loading s3:Bucket
+DEBUG: 2019-08-26 02:04:14,711: Renaming Bucket attribute name
+DEBUG: 2019-08-26 02:04:14,713: Event creating-resource-class.s3.Bucket: calling handler <function lazy_call.<locals>._handler at 0x11c4b57b8>
+INFO: 2019-08-26 02:04:14,714: Name of the folder: 20190826020414613825
+DEBUG: 2019-08-26 02:04:14,740: Loading JSON file: /Users/Neel/Applications/anaconda3/lib/python3.7/site-packages/botocore/data/s3/2006-03-01/paginators-1.json
+DEBUG: 2019-08-26 02:04:14,741: Calling paginated s3:list_objects with {'Bucket': 'sdfc-parquet-files', 'Prefix': 'received'}
+DEBUG: 2019-08-26 02:04:14,742: Event before-parameter-build.s3.ListObjects: calling handler <function set_list_objects_encoding_type_url at 0x1042f1730>
+DEBUG: 2019-08-26 02:04:14,743: Event before-parameter-build.s3.ListObjects: calling handler <function validate_bucket_name at 0x1042ee510>
+DEBUG: 2019-08-26 02:04:14,744: Event before-parameter-build.s3.ListObjects: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x11c625668>>
+DEBUG: 2019-08-26 02:04:14,744: Event before-parameter-build.s3.ListObjects: calling handler <function generate_idempotent_uuid at 0x1042ee158>
+DEBUG: 2019-08-26 02:04:14,745: Event before-call.s3.ListObjects: calling handler <function add_expect_header at 0x1042ee840>
+DEBUG: 2019-08-26 02:04:14,746: Event before-call.s3.ListObjects: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x11c625668>>
+DEBUG: 2019-08-26 02:04:14,748: Event before-call.s3.ListObjects: calling handler <function inject_api_version_header_if_needed at 0x1042f1ae8>
+DEBUG: 2019-08-26 02:04:14,749: Making request for OperationModel(name=ListObjects) with params: {'url_path': '/sdfc-parquet-files', 'query_string': {'prefix': 'received', 'encoding-type': 'url'}, 'method': 'GET', 'headers': {'User-Agent': 'Boto3/1.9.199 Python/3.7.3 Darwin/19.0.0 Botocore/1.12.199 Resource'}, 'body': b'', 'url': 'https://s3.amazonaws.com/sdfc-parquet-files?prefix=received&encoding-type=url', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x11c625908>, 'has_streaming_input': False, 'auth_type': None, 'encoding_type_auto_set': True, 'signing': {'bucket': 'sdfc-parquet-files'}}}
+DEBUG: 2019-08-26 02:04:14,751: Event request-created.s3.ListObjects: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x11c625828>>
+DEBUG: 2019-08-26 02:04:14,752: Event choose-signer.s3.ListObjects: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x11af07cc0>>
+DEBUG: 2019-08-26 02:04:14,753: Event choose-signer.s3.ListObjects: calling handler <function set_operation_specific_signer at 0x1042ee048>
+DEBUG: 2019-08-26 02:04:14,755: Event before-sign.s3.ListObjects: calling handler <function fix_s3_host at 0x10418ca60>
+DEBUG: 2019-08-26 02:04:14,756: Checking for DNS compatible bucket for: https://s3.amazonaws.com/sdfc-parquet-files?prefix=received&encoding-type=url
+DEBUG: 2019-08-26 02:04:14,757: URI updated to: https://sdfc-parquet-files.s3.amazonaws.com/?prefix=received&encoding-type=url
+DEBUG: 2019-08-26 02:04:14,759: Calculating signature using v4 auth.
+DEBUG: 2019-08-26 02:04:14,759: CanonicalRequest:
+GET
+/
+encoding-type=url&prefix=received
+host:sdfc-parquet-files.s3.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20190826T060414Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+DEBUG: 2019-08-26 02:04:14,760: StringToSign:
+AWS4-HMAC-SHA256
+20190826T060414Z
+20190826/us-east-1/s3/aws4_request
+029b69ed725f7229bc2158ab324b81ef82181329b863f5114f88b1aa16b0e089
+DEBUG: 2019-08-26 02:04:14,762: Signature:
+c1c29fdbbd2f20c411d189b477ba3b17a85815ca3a9ad44a3cb4df521e218649
+DEBUG: 2019-08-26 02:04:14,764: Sending http request: <AWSPreparedRequest stream_output=False, method=GET, url=https://sdfc-parquet-files.s3.amazonaws.com/?prefix=received&encoding-type=url, headers={'User-Agent': b'Boto3/1.9.199 Python/3.7.3 Darwin/19.0.0 Botocore/1.12.199 Resource', 'X-Amz-Date': b'20190826T060414Z', 'X-Amz-Content-SHA256': b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARSF242L6P5APOFWP/20190826/us-east-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=c1c29fdbbd2f20c411d189b477ba3b17a85815ca3a9ad44a3cb4df521e218649'}>
+DEBUG: 2019-08-26 02:04:14,765: Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+DEBUG: 2019-08-26 02:04:14,767: Starting new HTTPS connection (1): sdfc-parquet-files.s3.amazonaws.com:443
+DEBUG: 2019-08-26 02:04:15,041: https://sdfc-parquet-files.s3.amazonaws.com:443 "GET /?prefix=received&encoding-type=url HTTP/1.1" 200 None
+DEBUG: 2019-08-26 02:04:15,044: Response headers: {'x-amz-id-2': 'xFFtH44YJahPLNqoPLLZDNbutmaiKVkedXEyc5AcivbeAzKYVCMtkOC5gPYzKZFqwRzjnM8vbZk=', 'x-amz-request-id': 'D142B3CEB2939C29', 'Date': 'Mon, 26 Aug 2019 06:04:15 GMT', 'x-amz-bucket-region': 'us-east-1', 'Content-Type': 'application/xml', 'Transfer-Encoding': 'chunked', 'Server': 'AmazonS3'}
+DEBUG: 2019-08-26 02:04:15,044: Response body:
+b'<?xml version="1.0" encoding="UTF-8"?>\n<ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>sdfc-parquet-files</Name><Prefix>received</Prefix><Marker></Marker><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Contents><Key>received/</Key><LastModified>2019-08-26T00:34:49.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>d6fe89af79e8e296c59c37bca3b22bea77a942977781f42f1a07d0d4093ca843</ID><DisplayName>praneel.telukutla</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>received/userdata1.parquet</Key><LastModified>2019-08-26T02:03:11.000Z</LastModified><ETag>&quot;2f67292983870c49f4ee50330c4f7b7f&quot;</ETag><Size>113629</Size><Owner><ID>d6fe89af79e8e296c59c37bca3b22bea77a942977781f42f1a07d0d4093ca843</ID><DisplayName>praneel.telukutla</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents></ListBucketResult>'
+DEBUG: 2019-08-26 02:04:15,046: Event needs-retry.s3.ListObjects: calling handler <botocore.retryhandler.RetryHandler object at 0x11c6256d8>
+DEBUG: 2019-08-26 02:04:15,047: No retry needed.
+DEBUG: 2019-08-26 02:04:15,047: Event needs-retry.s3.ListObjects: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x11c625668>>
+DEBUG: 2019-08-26 02:04:15,048: Event after-call.s3.ListObjects: calling handler <function decode_list_object at 0x1042f17b8>
+DEBUG: 2019-08-26 02:04:15,049: Loading s3:ObjectSummary
+DEBUG: 2019-08-26 02:04:15,050: Renaming ObjectSummary attribute key
+DEBUG: 2019-08-26 02:04:15,051: Event creating-resource-class.s3.ObjectSummary: calling handler <function lazy_call.<locals>._handler at 0x11b893730>
+INFO: 2019-08-26 02:04:15,052: File Name : received/
+INFO: 2019-08-26 02:04:15,053: Folder Path: ./20190826020414613825/received/
+INFO: 2019-08-26 02:04:15,053: Full Path : ./20190826020414613825/received/
+INFO: 2019-08-26 02:04:15,055: Processing file received/ started.
+ERROR: 2019-08-26 02:04:15,057: list index out of range
+INFO: 2019-08-26 02:04:15,057: TODO : file moved to rejected folder
+INFO: 2019-08-26 02:04:15,058: File Name : received/userdata1.parquet
+INFO: 2019-08-26 02:04:15,059: Folder Path: ./20190826020414613825/received/
+INFO: 2019-08-26 02:04:15,060: Full Path : ./20190826020414613825/received/userdata1.parquet
+DEBUG: 2019-08-26 02:04:15,061: Acquiring 0
+DEBUG: 2019-08-26 02:04:15,062: DownloadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x11b11aac8>}) about to wait for the following futures []
+DEBUG: 2019-08-26 02:04:15,064: DownloadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x11b11aac8>}) done waiting for dependent futures
+DEBUG: 2019-08-26 02:04:15,065: Executing task DownloadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x11b11aac8>}) with kwargs {'client': <botocore.client.S3 object at 0x11cb184e0>, 'config': <boto3.s3.transfer.TransferConfig object at 0x11cacf208>, 'osutil': <s3transfer.utils.OSUtils object at 0x11cacf198>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x11b11a400>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x11b11aac8>, 'io_executor': <s3transfer.futures.BoundedExecutor object at 0x11b11ad30>}
+DEBUG: 2019-08-26 02:04:15,067: Event before-parameter-build.s3.HeadObject: calling handler <function sse_md5 at 0x1042ee598>
+DEBUG: 2019-08-26 02:04:15,068: Event before-parameter-build.s3.HeadObject: calling handler <function validate_bucket_name at 0x1042ee510>
+DEBUG: 2019-08-26 02:04:15,069: Event before-parameter-build.s3.HeadObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x11c625668>>
+DEBUG: 2019-08-26 02:04:15,071: Event before-parameter-build.s3.HeadObject: calling handler <function generate_idempotent_uuid at 0x1042ee158>
+DEBUG: 2019-08-26 02:04:15,073: Event before-call.s3.HeadObject: calling handler <function add_expect_header at 0x1042ee840>
+DEBUG: 2019-08-26 02:04:15,073: Event before-call.s3.HeadObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x11c625668>>
+DEBUG: 2019-08-26 02:04:15,074: Event before-call.s3.HeadObject: calling handler <function inject_api_version_header_if_needed at 0x1042f1ae8>
+DEBUG: 2019-08-26 02:04:15,075: Making request for OperationModel(name=HeadObject) with params: {'url_path': '/sdfc-parquet-files/received/userdata1.parquet', 'query_string': {}, 'method': 'HEAD', 'headers': {'User-Agent': 'Boto3/1.9.199 Python/3.7.3 Darwin/19.0.0 Botocore/1.12.199 Resource'}, 'body': b'', 'url': 'https://s3.amazonaws.com/sdfc-parquet-files/received/userdata1.parquet', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x11c625908>, 'has_streaming_input': False, 'auth_type': None, 'signing': {'bucket': 'sdfc-parquet-files'}}}
+DEBUG: 2019-08-26 02:04:15,076: Event request-created.s3.HeadObject: calling handler <function signal_not_transferring at 0x104be80d0>
+DEBUG: 2019-08-26 02:04:15,077: Event request-created.s3.HeadObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x11c625828>>
+DEBUG: 2019-08-26 02:04:15,078: Event choose-signer.s3.HeadObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x11af07cc0>>
+DEBUG: 2019-08-26 02:04:15,079: Event choose-signer.s3.HeadObject: calling handler <function set_operation_specific_signer at 0x1042ee048>
+DEBUG: 2019-08-26 02:04:15,080: Event before-sign.s3.HeadObject: calling handler <function fix_s3_host at 0x10418ca60>
+DEBUG: 2019-08-26 02:04:15,081: Checking for DNS compatible bucket for: https://s3.amazonaws.com/sdfc-parquet-files/received/userdata1.parquet
+DEBUG: 2019-08-26 02:04:15,083: URI updated to: https://sdfc-parquet-files.s3.amazonaws.com/received/userdata1.parquet
+DEBUG: 2019-08-26 02:04:15,084: Calculating signature using v4 auth.
+DEBUG: 2019-08-26 02:04:15,085: CanonicalRequest:
+HEAD
+/received/userdata1.parquet
+
+host:sdfc-parquet-files.s3.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20190826T060415Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+DEBUG: 2019-08-26 02:04:15,086: StringToSign:
+AWS4-HMAC-SHA256
+20190826T060415Z
+20190826/us-east-1/s3/aws4_request
+ee00f808648aa9b2e93a35679144a34d357516be0ce66aea5457ace211c30b3d
+DEBUG: 2019-08-26 02:04:15,088: Signature:
+f1477a35500ae03dedda6ec351c23f8f2e08158d74ad1ffbe8afb05d15c03720
+DEBUG: 2019-08-26 02:04:15,088: Event request-created.s3.HeadObject: calling handler <function signal_transferring at 0x104be8158>
+DEBUG: 2019-08-26 02:04:15,090: Sending http request: <AWSPreparedRequest stream_output=False, method=HEAD, url=https://sdfc-parquet-files.s3.amazonaws.com/received/userdata1.parquet, headers={'User-Agent': b'Boto3/1.9.199 Python/3.7.3 Darwin/19.0.0 Botocore/1.12.199 Resource', 'X-Amz-Date': b'20190826T060415Z', 'X-Amz-Content-SHA256': b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARSF242L6P5APOFWP/20190826/us-east-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=f1477a35500ae03dedda6ec351c23f8f2e08158d74ad1ffbe8afb05d15c03720'}>
+DEBUG: 2019-08-26 02:04:15,090: Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+DEBUG: 2019-08-26 02:04:15,117: https://sdfc-parquet-files.s3.amazonaws.com:443 "HEAD /received/userdata1.parquet HTTP/1.1" 200 0
+DEBUG: 2019-08-26 02:04:15,119: Response headers: {'x-amz-id-2': 'kLkQP+QGx5tCjMeSNkcES4rvFYcTAt8LzT3OvSvCU/ljVnCLyjHriqeHhsq4IvSkBEbEcHX5VT4=', 'x-amz-request-id': '139F8FF5BC2F7F4D', 'Date': 'Mon, 26 Aug 2019 06:04:16 GMT', 'Last-Modified': 'Mon, 26 Aug 2019 02:03:11 GMT', 'ETag': '"2f67292983870c49f4ee50330c4f7b7f"', 'Accept-Ranges': 'bytes', 'Content-Type': 'binary/octet-stream', 'Content-Length': '113629', 'Server': 'AmazonS3'}
+DEBUG: 2019-08-26 02:04:15,119: Response body:
+b''
+DEBUG: 2019-08-26 02:04:15,121: Event needs-retry.s3.HeadObject: calling handler <botocore.retryhandler.RetryHandler object at 0x11c6256d8>
+DEBUG: 2019-08-26 02:04:15,122: No retry needed.
+DEBUG: 2019-08-26 02:04:15,122: Event needs-retry.s3.HeadObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x11c625668>>
+DEBUG: 2019-08-26 02:04:15,123: Submitting task ImmediatelyWriteIOGetObjectTask(transfer_id=0, {'bucket': 'sdfc-parquet-files', 'key': 'received/userdata1.parquet', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x11b11a400> for transfer request: 0.
+DEBUG: 2019-08-26 02:04:15,124: Acquiring 0
+DEBUG: 2019-08-26 02:04:15,125: ImmediatelyWriteIOGetObjectTask(transfer_id=0, {'bucket': 'sdfc-parquet-files', 'key': 'received/userdata1.parquet', 'extra_args': {}}) about to wait for the following futures []
+DEBUG: 2019-08-26 02:04:15,126: Releasing acquire 0/None
+DEBUG: 2019-08-26 02:04:15,126: ImmediatelyWriteIOGetObjectTask(transfer_id=0, {'bucket': 'sdfc-parquet-files', 'key': 'received/userdata1.parquet', 'extra_args': {}}) done waiting for dependent futures
+DEBUG: 2019-08-26 02:04:15,128: Executing task ImmediatelyWriteIOGetObjectTask(transfer_id=0, {'bucket': 'sdfc-parquet-files', 'key': 'received/userdata1.parquet', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x11cb184e0>, 'bucket': 'sdfc-parquet-files', 'key': 'received/userdata1.parquet', 'fileobj': <s3transfer.utils.DeferredOpenFile object at 0x11cad7390>, 'extra_args': {}, 'callbacks': [], 'max_attempts': 5, 'download_output_manager': <s3transfer.download.DownloadFilenameOutputManager object at 0x11b868eb8>, 'io_chunksize': 262144, 'bandwidth_limiter': None}
+DEBUG: 2019-08-26 02:04:15,130: Event before-parameter-build.s3.GetObject: calling handler <function sse_md5 at 0x1042ee598>
+DEBUG: 2019-08-26 02:04:15,131: Event before-parameter-build.s3.GetObject: calling handler <function validate_bucket_name at 0x1042ee510>
+DEBUG: 2019-08-26 02:04:15,131: Event before-parameter-build.s3.GetObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x11c625668>>
+DEBUG: 2019-08-26 02:04:15,132: Event before-parameter-build.s3.GetObject: calling handler <function generate_idempotent_uuid at 0x1042ee158>
+DEBUG: 2019-08-26 02:04:15,134: Event before-call.s3.GetObject: calling handler <function add_expect_header at 0x1042ee840>
+DEBUG: 2019-08-26 02:04:15,135: Event before-call.s3.GetObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x11c625668>>
+DEBUG: 2019-08-26 02:04:15,135: Event before-call.s3.GetObject: calling handler <function inject_api_version_header_if_needed at 0x1042f1ae8>
+DEBUG: 2019-08-26 02:04:15,136: Making request for OperationModel(name=GetObject) with params: {'url_path': '/sdfc-parquet-files/received/userdata1.parquet', 'query_string': {}, 'method': 'GET', 'headers': {'User-Agent': 'Boto3/1.9.199 Python/3.7.3 Darwin/19.0.0 Botocore/1.12.199 Resource'}, 'body': b'', 'url': 'https://s3.amazonaws.com/sdfc-parquet-files/received/userdata1.parquet', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x11c625908>, 'has_streaming_input': False, 'auth_type': None, 'signing': {'bucket': 'sdfc-parquet-files'}}}
+DEBUG: 2019-08-26 02:04:15,137: Event request-created.s3.GetObject: calling handler <function signal_not_transferring at 0x104be80d0>
+DEBUG: 2019-08-26 02:04:15,138: Event request-created.s3.GetObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x11c625828>>
+DEBUG: 2019-08-26 02:04:15,139: Event choose-signer.s3.GetObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x11af07cc0>>
+DEBUG: 2019-08-26 02:04:15,140: Event choose-signer.s3.GetObject: calling handler <function set_operation_specific_signer at 0x1042ee048>
+DEBUG: 2019-08-26 02:04:15,140: Event before-sign.s3.GetObject: calling handler <function fix_s3_host at 0x10418ca60>
+DEBUG: 2019-08-26 02:04:15,141: Checking for DNS compatible bucket for: https://s3.amazonaws.com/sdfc-parquet-files/received/userdata1.parquet
+DEBUG: 2019-08-26 02:04:15,142: URI updated to: https://sdfc-parquet-files.s3.amazonaws.com/received/userdata1.parquet
+DEBUG: 2019-08-26 02:04:15,143: Calculating signature using v4 auth.
+DEBUG: 2019-08-26 02:04:15,144: CanonicalRequest:
+GET
+/received/userdata1.parquet
+
+host:sdfc-parquet-files.s3.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20190826T060415Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+DEBUG: 2019-08-26 02:04:15,145: StringToSign:
+AWS4-HMAC-SHA256
+20190826T060415Z
+20190826/us-east-1/s3/aws4_request
+ebc2414154aeba5b7fbb8d64e8b12c18e27ff8d455c5acc0b9b6afc637aa37a6
+DEBUG: 2019-08-26 02:04:15,146: Signature:
+76dad7b4358fbe5c7ffe9b96ae1baf99724dd7972bd331bf5ee68d9bda9c7b8b
+DEBUG: 2019-08-26 02:04:15,147: Event request-created.s3.GetObject: calling handler <function signal_transferring at 0x104be8158>
+DEBUG: 2019-08-26 02:04:15,148: Sending http request: <AWSPreparedRequest stream_output=True, method=GET, url=https://sdfc-parquet-files.s3.amazonaws.com/received/userdata1.parquet, headers={'User-Agent': b'Boto3/1.9.199 Python/3.7.3 Darwin/19.0.0 Botocore/1.12.199 Resource', 'X-Amz-Date': b'20190826T060415Z', 'X-Amz-Content-SHA256': b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARSF242L6P5APOFWP/20190826/us-east-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=76dad7b4358fbe5c7ffe9b96ae1baf99724dd7972bd331bf5ee68d9bda9c7b8b'}>
+DEBUG: 2019-08-26 02:04:15,149: Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+DEBUG: 2019-08-26 02:04:15,206: https://sdfc-parquet-files.s3.amazonaws.com:443 "GET /received/userdata1.parquet HTTP/1.1" 200 113629
+DEBUG: 2019-08-26 02:04:15,207: Response headers: {'x-amz-id-2': 'MIBGpzC9gzZGo1hgPrFKd8uV6R3z1utmneNfzwg9EQ2axvvI9fwbAqtnrSczurTgg3KXS5+fEQ8=', 'x-amz-request-id': '4386B4B6C0145CF6', 'Date': 'Mon, 26 Aug 2019 06:04:16 GMT', 'Last-Modified': 'Mon, 26 Aug 2019 02:03:11 GMT', 'ETag': '"2f67292983870c49f4ee50330c4f7b7f"', 'Accept-Ranges': 'bytes', 'Content-Type': 'binary/octet-stream', 'Content-Length': '113629', 'Server': 'AmazonS3'}
+DEBUG: 2019-08-26 02:04:15,208: Response body:
+<botocore.response.StreamingBody object at 0x11c0735c0>
+DEBUG: 2019-08-26 02:04:15,210: Event needs-retry.s3.GetObject: calling handler <botocore.retryhandler.RetryHandler object at 0x11c6256d8>
+DEBUG: 2019-08-26 02:04:15,211: No retry needed.
+DEBUG: 2019-08-26 02:04:15,211: Event needs-retry.s3.GetObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x11c625668>>
+DEBUG: 2019-08-26 02:04:16,726: IOWriteTask(transfer_id=0, {'offset': 0}) about to wait for the following futures []
+DEBUG: 2019-08-26 02:04:16,727: IOWriteTask(transfer_id=0, {'offset': 0}) done waiting for dependent futures
+DEBUG: 2019-08-26 02:04:16,728: Executing task IOWriteTask(transfer_id=0, {'offset': 0}) with kwargs {'fileobj': <s3transfer.utils.DeferredOpenFile object at 0x11cad7390>, 'offset': 0}
+DEBUG: 2019-08-26 02:04:16,729: IORenameFileTask(transfer_id=0, {'final_filename': './20190826020414613825/received/userdata1.parquet'}) about to wait for the following futures []
+DEBUG: 2019-08-26 02:04:16,730: IORenameFileTask(transfer_id=0, {'final_filename': './20190826020414613825/received/userdata1.parquet'}) done waiting for dependent futures
+DEBUG: 2019-08-26 02:04:16,731: Executing task IORenameFileTask(transfer_id=0, {'final_filename': './20190826020414613825/received/userdata1.parquet'}) with kwargs {'fileobj': <s3transfer.utils.DeferredOpenFile object at 0x11cad7390>, 'final_filename': './20190826020414613825/received/userdata1.parquet', 'osutil': <s3transfer.utils.OSUtils object at 0x11cacf198>}
+DEBUG: 2019-08-26 02:04:16,732: Releasing acquire 0/None
+INFO: 2019-08-26 02:04:16,733: Processing file received/userdata1.parquet started.
+/Users/Neel/Applications/anaconda3/lib/python3.7/site-packages/pyarrow/pandas_compat.py:752: FutureWarning: .labels was deprecated in version 0.24.0. Use .codes instead.
+  labels, = index.labels
+      first_name  last_name
+id                         
+1         Amanda     Jordan
+2         Albert    Freeman
+3         Evelyn     Morgan
+4         Denise      Riley
+5         Carlos      Burns
+6        Kathryn      White
+7         Samuel     Holmes
+8          Harry     Howell
+9           Jose     Foster
+10         Emily    Stewart
+11         Susan    Perkins
+12         Alice      Berry
+13        Justin      Berry
+14         Kathy   Reynolds
+15       Dorothy     Hudson
+16         Bruce     Willis
+17         Emily    Andrews
+18       Stephen    Wallace
+19      Clarence     Lawson
+20       Rebecca       Bell
+21         Diane    Stevens
+22      Lawrence      Ramos
+23       Gregory     Barnes
+24      Michelle      Ellis
+25        Rachel    Perkins
+26       Anthony   Lawrence
+27         Henry      Henry
+28        Samuel     Hunter
+29    Jacqueline     Holmes
+30         Annie     Torres
+...          ...        ...
+971        Karen    Garrett
+972         Alan     Hudson
+973        Bobby     Bowman
+974      Rebecca    Stanley
+975      Charles     Greene
+976         Jean     Austin
+977         Lori     Porter
+978        Billy      Young
+979        Joyce      Wells
+980       Pamela     Hunter
+981        Bruce    Wheeler
+982         Juan      Burns
+983                  Nguyen
+984        Linda      Allen
+985         Mark    Simpson
+986       Brenda      James
+987        Nancy       Gray
+988         Juan     Fuller
+989      Theresa   Harrison
+990        Helen     Snyder
+991      Russell       Hunt
+992       Martha     Howard
+993     Patricia  Henderson
+994        Carol   Williams
+995         Jose      Mccoy
+996       Dennis     Harris
+997       Gloria   Hamilton
+998        Nancy     Morris
+999        Annie    Daniels
+1000       Julie      Meyer
+
+[1000 rows x 2 columns]
+INFO: 2019-08-26 02:05:17,221: TODO : file moved to processed folder
+INFO: 2019-08-26 02:05:17,226: Files created at location : ./20190826020414613825/received/userdata1.parquet
